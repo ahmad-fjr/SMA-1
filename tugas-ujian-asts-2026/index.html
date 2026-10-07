@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coding Competition 2026</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        color: #14213d;
+        background: url("/portofolio-FAH/pemandangan.png") center center / cover
+          no-repeat fixed;
+      }
+
+      /* HERO */
+      .hero {
+        min-height: 500px;
+        background: rgba(234, 243, 255, 0.85);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 14%;
+        gap: 50px;
+      }
+
+      .hero-text {
+        max-width: 550px;
+      }
+
+      .label {
+        display: inline-block;
+        background: #dbeafe;
+        color: #1769e0;
+        padding: 8px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      h1 {
+        font-size: 44px;
+        margin: 25px 0;
+        line-height: 1.1;
+      }
+
+      h1 span {
+        color: #2867e8;
+      }
+
+      .hero p {
+        color: #5d718d;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .btn {
+        display: inline-block;
+        background: #2867e8;
+        color: white;
+        padding: 14px 22px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .coding-box {
+        background: #10182c;
+        color: white;
+        padding: 35px;
+        border-radius: 15px;
+        width: 340px;
+        box-shadow: 0 20px 35px #b7c4d5;
+        font-family: monospace;
+        line-height: 2;
+      }
+
+      .coding-box span {
+        color: #b87cff;
+      }
+
+      /* CARD */
+      .jenjang {
+        padding: 70px 12%;
+        text-align: center;
+        background: rgba(247, 249, 252, 0.9);
+      }
+
+      .jenjang h2 {
+        font-size: 32px;
+        margin: 15px 0;
+      }
+
+      .sub {
+        color: #687991;
+        margin-bottom: 40px;
+      }
+
+      .cards {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .card {
+        background: white;
+        border: 1px solid #e1e7ef;
+        border-radius: 14px;
+        padding: 30px;
+        text-align: left;
+        width: 300px;
+        transition: 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-8px);
+        border-color: #2867e8;
+      }
+
+      .icon {
+        font-size: 35px;
+        margin-bottom: 25px;
+      }
+
+      .card h3 {
+        font-size: 21px;
+        margin-bottom: 10px;
+      }
+
+      .card h4 {
+        color: #2867e8;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        color: #65758b;
+        line-height: 1.5;
+        font-size: 14px;
+      }
+
+      .card a {
+        display: block;
+        margin-top: 25px;
+        color: #2867e8;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      footer {
+        text-align: center;
+        padding: 25px;
+        background: #eaf3ff;
+      }
+
+      @media (max-width: 800px) {
+        .hero,
+        .cards {
+          flex-direction: column;
+        }
+
+        .hero {
+          padding: 50px 8%;
+        }
+
+        .coding-box {
+          width: 100%;
+        }
+
+        .card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <img
+      src="/portofolio-FAH/pemandangan.png"
+      alt="Pemandangan"
+      width="100%"
+      height="100%"
+      style="position: fixed; top: 0; left: 0; z-index: -1"
+    />
+
+    <section class="hero">
+      <div class="hero-text">
+        <span class="label">CODING COMPETITION 2026</span>
+
+        <h1>
+          Tunjukkan<br />
+          Kemampuanmu <span>Lewat Coding!</span>
+        </h1>
+
+        <p>
+          Ajang kompetisi coding bagi pelajar untuk mengembangkan kreativitas,
+          logika, dan kemampuan memecahkan masalah melalui teknologi.
+        </p>
+
+        <a href="#" class="btn">Daftar Sekarang</a>
+      </div>
+
+      <img
+        src="/tugas-ujian-asts-2026/asset.png"
+        alt="Coding Illustration"
+        class="coding-box"
+      />
+    </section>
+
+    <section class="jenjang">
+      <small> KATEGORI LOMBA </small>
+      <h2>Pilih Jenjang Lomba</h2>
+      <p class="sub">Ikuti kompetisi sesuai dengan jenjang pendidikanmu.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Tingkat SD</h3>
+          <h4>Coding Beginner</h4>
+          <p>
+            Kompetisi coding dasar untuk siswa Sekolah Dasar dengan soal yang
+            menyenangkan dan mudah dipahami.
+          </p>
+          <a href="#">Pilih Kategori →</a>
+        </div>
+
+        <div class="card">
+          <h3>Tingkat SMP</h3>
+          <h4>Coding Intermediate</h4>
+          <p>
+            Kompetisi coding dengan tantangan algoritma dan problem solving
+            untuk siswa SMP.
+          </p>
+          <a href="#">Pilih Kategori →</a>
+        </div>
+
+        <div class="card">
+          <h3>Tingkat SMK</h3>
+          <h4>Coding Advanced</h4>
+          <p>
+            Kompetisi programming untuk siswa SMK dengan tantangan yang lebih
+            kompleks.
+          </p>
+          <a href="#">Pilih Kategori →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 Lomba Coding Pelajar</footer>
+  </body>
+</html>
